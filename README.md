@@ -80,7 +80,7 @@ with remote('challenge.ctf.com', 1337) as p:
 output = p.recv(NUMBER_OF_BYTES)
 ```
 
-- Gets NUMBER_OF_BYTES bytes.
+- Gets at most NUMBER_OF_BYTES bytes.
 - Returns immediately if there is some data available.
 - Only blocks if there is no data available.
 
